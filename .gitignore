@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+*.pkl
+*.db
+*.log
+.env
+shadow_log.csv
+airflow/logs/
+airflow/plugins/__pycache__/

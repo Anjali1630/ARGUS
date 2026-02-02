@@ -1,0 +1,12 @@
+project: argus_feature_store
+registry: data/registry.db
+provider: local
+
+online_store:
+  type: redis
+  connection_string: "localhost:6379"
+
+entity_key_serialization_version: 3
+
+auth:
+  type: no_auth

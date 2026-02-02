@@ -1,4 +1,7 @@
-ARGUS – Real-Time Fraud Detection MLOps System
+ARGUS 
+Real-Time Fraud Detection MLOps System
+
+
 Overview:
 ARGUS is an end-to-end real-time fraud detection MLOps system designed to simulate how fraud detection models operate in production fintech environments.
 Unlike traditional machine learning projects that focus primarily on model accuracy, ARGUS emphasizes production-grade MLOps practices such as real-time feature serving, safe model deployment, continuous monitoring, concept drift detection, and automated retraining.

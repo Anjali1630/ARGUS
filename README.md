@@ -49,21 +49,15 @@ Continuous Learning Pipeline
 Architecture Flow:
 
 Transaction Request
-        ↓
-FastAPI Inference Service
-        ↓
-Feast Feature Store (Redis)
-        ↓
-Champion Model → Fraud Decision
-Shadow Model   → Silent Evaluation
-        ↓
-Kafka Event Stream
-        ↓
-Monitoring and Drift Detection
-        ↓
-Airflow Retraining Pipeline
-        ↓
-Shadow Deployment → Champion Promotion
+- FastAPI Inference Service
+- Feast Feature Store (Redis)
+- Champion Model (Fraud Decision)
+- Shadow Model (Silent Evaluation)
+- Kafka Event Stream
+- Monitoring and Drift Detection
+- Airflow Retraining Pipeline
+- Shadow Deployment and Champion Promotion
+
 
 Technology Stack:
 >Python 3.11
@@ -97,17 +91,18 @@ POST /predict?user_id=user_1&amount=90000
 
 Project Structure
 ARGUS/
-├── app.py
-├── train_model.py
-├── train_model_v2.py
-├── drift_detector.py
-├── auto_retrain.py
-├── kafka_producer.py
-├── kafka_consumer.py
-├── shadow_logger.py
-├── airflow/
-├── argus_feature_store/
-└── README.md
+- app.py
+- train_model.py
+- train_model_v2.py
+- drift_detector.py
+- auto_retrain.py
+- kafka_producer.py
+- kafka_consumer.py
+- shadow_logger.py
+- airflow/
+- argus_feature_store/
+- README.md
+
 
 Evaluation Focus:
 ARGUS prioritizes system reliability, deployment safety, and continuous learning over isolated accuracy metrics.
